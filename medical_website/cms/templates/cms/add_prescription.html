@@ -1,0 +1,12 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}Add Prescription{% endblock %}
+
+{% block content %}
+<h1>Add a Prescription</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Prescription</button>
+</form>
+{% endblock %}

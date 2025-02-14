@@ -1,0 +1,80 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good evening"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! What can I do for you?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": ["Goodbye! Stay healthy!", "Take care!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful"],
+        "responses": ["You're welcome!", "Glad to help!"]
+      },
+      {
+        "tag": "symptoms_inquiry",
+        "patterns": ["What are the symptoms of flu?", "How do I know if I have COVID?"],
+        "responses": ["Flu symptoms include fever, cough, and body aches.", "COVID symptoms include fever, cough, and loss of taste/smell."]
+      },
+      {
+        "tag": "medication_info",
+        "patterns": ["What are the side effects of ibuprofen?", "Is paracetamol safe?"],
+        "responses": ["Common side effects of ibuprofen include nausea and dizziness.", "Paracetamol is generally safe when taken in recommended doses."]
+      },
+      {
+        "tag": "emergency",
+        "patterns": ["I'm having chest pain", "What should I do in a medical emergency?"],
+        "responses": ["Call 102/108 immediately!", "Seek medical attention immediately."]
+      },
+      {
+        "tag": "appointment_booking",
+        "patterns": ["I want to book an appointment", "Can I see a doctor?", "Schedule a visit"],
+        "responses": ["Please provide your preferred date and time for the appointment.", "Would you like a morning or afternoon appointment?"]
+      },
+      {
+        "tag": "clinic_hours",
+        "patterns": ["What are your opening hours?", "When is the clinic open?", "What time do you close?"],
+        "responses": ["We are open Monday to Friday from 9 AM to 6 PM.", "Our clinic hours are 9 AM - 6 PM, Monday to Friday."]
+      },
+      {
+        "tag": "insurance",
+        "patterns": ["Do you accept insurance?", "Which health insurance do you take?", "Is my insurance covered?"],
+        "responses": ["We accept most major health insurance plans. Please provide your insurance provider details.", "You can check with our receptionist about accepted insurance plans."]
+      },
+      {
+        "tag": "prescription_refill",
+        "patterns": ["Can I get a prescription refill?", "I need my medicine refilled", "Refill my prescription"],
+        "responses": ["Sure! Please provide your prescription details.", "You may need a consultation before a refill. Would you like to book an appointment?"]
+      },
+      {
+        "tag": "vaccination",
+        "patterns": ["Do you offer flu shots?", "Can I get a COVID vaccine here?", "Where can I get vaccinated?"],
+        "responses": ["Yes, we offer flu and COVID vaccines. Please schedule an appointment.", "Vaccination appointments are available. Would you like to book one?"]
+      },
+      {
+        "tag": "test_results",
+        "patterns": ["How do I get my test results?", "Are my lab results ready?", "When will my test results be available?"],
+        "responses": ["Test results are usually available within 2-3 days. You can check with our receptionist.", "Please call our clinic to confirm if your test results are ready."]
+      },
+      {
+        "tag": "mental_health",
+        "patterns": ["I feel anxious", "I'm stressed", "Do you offer mental health support?"],
+        "responses": ["We have mental health specialists available. Would you like to book a consultation?", "If you’re feeling anxious, talking to a professional can help."]
+      },
+      {
+        "tag": "diet_nutrition",
+        "patterns": ["What is a healthy diet?", "Can you recommend a nutrition plan?", "I need diet advice"],
+        "responses": ["A balanced diet includes proteins, vegetables, and whole grains. Would you like a detailed diet plan?", "For a personalized diet, consult our nutritionist."]
+      },
+      {
+        "tag": "exercise_tips",
+        "patterns": ["How much should I exercise?", "What are good exercises for weight loss?", "Can you suggest a workout routine?"],
+        "responses": ["Regular exercise for 30 minutes a day is beneficial. Would you like a customized plan?", "For weight loss, try a mix of cardio and strength training."]
+      }
+    ]
+  }
+  

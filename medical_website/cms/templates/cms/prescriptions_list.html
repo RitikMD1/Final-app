@@ -1,0 +1,20 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}Prescription List{% endblock %}
+
+{% block content %}
+    
+    <h1>Prescriptions List</h1>
+    <ul>
+        {% for prescription in prescriptions %}
+            <li>
+                <strong>{{ prescription.name }}</strong><br>
+                <p>{{ prescription.description }}</p>
+                <p><em>Dosage: {{ prescription.dosage }}</em></p>
+            </li>
+        {% empty %}
+            <p>No prescriptions available.</p>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

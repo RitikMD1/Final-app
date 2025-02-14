@@ -1,0 +1,77 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}About{% endblock %}
+{% block content %}
+    <div class="about-container">
+        <h1>About Us</h1>
+        <div class="col-md-4 mx-auto">
+            <div class="card shadow-sm border-0 rounded-lg hover-card">
+                <img src="https://plus.unsplash.com/premium_photo-1681843058031-838bccab8578?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top about-image" alt="Health Tips">
+                <div class="card-body">
+                    <h5 class="card-title">Health Tips</h5>
+                    <p class="card-text">Learn about maintaining your health through our expert tips and articles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="slide">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="slide">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    <style>
+        .about-container {
+            font-family: 'Arial', sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-container h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slider-container {
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .slider {
+            display: flex;
+            width: 300%;
+            animation: slide 10s infinite;
+        }
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 1.2em;
+            color: #666;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+{% endblock %}
+

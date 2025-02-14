@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <!-- Optional: Add Bootstrap or custom CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Navbar Container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgb(219, 221, 223) 18%,#007bff 100%); /* Gradient background */
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for elegance */
+        }
+
+        /* Brand Name */
+        .navbar .navbar-brand {
+            font-size: 1.8em;  /* Bigger font size for prominence */
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase; /* Makes the brand name stand out */
+            padding: 0;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        /* Hover effect on brand name */
+        .navbar .navbar-brand:hover {
+            color:#769bc2; /* Golden hover effect */
+        }
+
+        /* Navbar Links */
+        .navbar-nav .nav-item {
+            margin: 0 10px;  /* Spacing between items */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            border-radius: 5px;  /* Rounded corners for links */
+        }
+
+        /* Hover effect on links */
+        .navbar-nav .nav-link:hover {
+            background-color: #007bff; /* Highlight on hover */
+            color: #fff !important;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center; /* Center the navbar links in mobile view */
+            }
+
+            .navbar-nav .nav-link {
+                padding: 12px 20px; /* Bigger padding for touch devices */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    {% include 'cms/navbar.html' %}
+
+    {% block content %}
+        <!-- Main content will be inserted here -->
+    {% endblock %}
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Medical Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Optional: Add Bootstrap or custom JS for interactivity -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
